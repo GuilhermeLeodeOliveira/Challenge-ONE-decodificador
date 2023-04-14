@@ -19,7 +19,7 @@
     <div id="preloader">
         <div class="inner">
             <!-- HTML DA ANIMAÇÃO MUITO LOUCA DO SEU PRELOADER! -->
-            <img src="" alt="">
+            <img src="img/lupa.gif" width="50%" alt="">
             <div class="bolas">
                 <div></div>
                 <div></div>
@@ -36,15 +36,15 @@
         <section class="left">
 
             <div class="center">
-                
-                <textarea name="textoEntrada" placeholder="Digite um texto..." id=""></textarea>
-                
+
+                <textarea name="textoEntrada" id="entradatxt" placeholder="Digite um texto..."></textarea>
+
                 <div class="buttons">
 
-                    <button class="cript">Criptografar</button>
-    
-                    <button class="descript">Descriptografar</button>
-                
+                    <button class="cript" id="cript" onclick="cript()">Criptografar</button>
+
+                    <button class="descript" id="cript" onclick="descript()">Descriptografar</button>
+
                 </div>
 
             </div>
@@ -54,15 +54,27 @@
         <section class="right">
 
             <div class="center">
-                
-                <img class="imagem" src="img/High quality products 1 1.svg" alt="">
-                <p>Nenhuma mensagem encontrada <br> Digite um texto que você deseja criptografar ou descriptografar.</p>
+
+                <img class="imagem" id="img" src="img/men.svg" alt="">
+                <p id="message">Nenhuma mensagem encontrada. <br> Digite um texto que você deseja criptografar ou
+                    descriptografar.</p>
+
+                <div class="exibir" id="exibir">
+
+                    <textarea  id="saidatxt"></textarea>
+
+                    <button class="copia" id="copia" onclick="copia()">Copiar</button>
+
+                </div>
+
 
             </div>
 
         </section>
 
     </main>
+
+    <script src="js/criptografar.js"></script>
 
 </body>
 
