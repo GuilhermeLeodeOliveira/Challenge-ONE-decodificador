@@ -51,7 +51,9 @@ function cript(){
     exibir.style.display="block";
 
     let saidatxt = document.getElementById("saidatxt");
-    saidatxt.style.display="block";
+    exibir.style.display="flex";
+    exibir.style.flexDirection="column";
+    exibir.style.justifyContent="center";
 
 }
 
@@ -84,7 +86,9 @@ function descript(){
     message.style.display = "none";
 
     let exibir = document.getElementById("exibir");
-    exibir.style.display="block";
+    exibir.style.display="flex";
+    exibir.style.flexDirection="column";
+    exibir.style.justifyContent="center";
 
     let saidatxt = document.getElementById("saidatxt");
     saidatxt.style.display="block";
